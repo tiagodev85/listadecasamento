@@ -47,9 +47,15 @@
   font-family: 'Belleza';
   color: #805730;
 }
-
-h1 {
-  font-size: 65px;
+.title h3{
+  font-size: 28px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+.title h1 {
+  font-weight: 300;
+  font-size: 70px;
+  letter-spacing: 5px;
 }
 
 .bg-img {
@@ -68,12 +74,12 @@ h1 {
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom: 8%;
+  bottom: 6%;
   font-family: 'Angella';
 }
 
 .title-casal h1 {
-  font-size: 12rem;
+  font-size: 14rem;
   font-weight: 200;
   color: #805730;
   text-shadow: 8px 6px 3px rgba(255, 255, 255, 0.486);
