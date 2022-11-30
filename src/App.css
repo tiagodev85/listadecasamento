@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Angella';
+  src: url(./assets/AngellaWhite.otf);
+}
+
+@font-face {
+  font-family: 'Belleza';
+  src: url(./assets/Belleza-Regular.ttf);
+}
+
+.container {
+  width: 1024px;
+  height: 1024px;
+  position: relative;
+  left: calc(50% - 512px);
+  /* border: 1px solid #000; */
+}
+
+.bandeirola {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Belleza';
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  left: 5%;
+  border: solid #613d1a;
+  width: 120px;
+  height: 250px;
+  border-width: 60px;
+  border-bottom-width: 30px;
+  box-sizing: border-box;
+  border-bottom-color: transparent;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  right: 15%;
+  top: 3%;
+  text-transform: uppercase;
+  font-family: 'Belleza';
+  color: #805730;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+.bg-img {
+  width: 1024px;
+  height: 100%;
+  position: absolute;
+  left: calc(50% - 512px);
+  top: 15%;
+  z-index: -1;
+  background-image: url(./assets/AirBrush_20221127204040.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title-casal {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 8%;
+  font-family: 'Angella';
+}
+
+.title-casal h1 {
+  font-size: 12rem;
+  font-weight: 200;
+  color: #805730;
+  text-shadow: 8px 6px 3px rgba(255, 255, 255, 0.486);
+}
+
+.versiculo {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  font-family: 'Belleza';
+}
+
+.versiculo p {
+  margin: auto;
+  width: 60%;
+  text-align: justify;
+  font-size: 2.5rem;
+  color: #613d1a;
+}
+.versiculo span{
+  width: 60%;  
+  margin: auto;
+  color: #613d1a;
+  font-size: 24px;
+  text-align: right;
+}
+
+.agradecimento {  
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Belleza';
+  align-items: center;
+}
+
+.agradecimento p {
+  width: 60%;
+  font-size: 2.5rem;
+  text-align: justify;
+  color: #805730;  
+}
+.controle{
+  width: 350px; 
+  height: 150px;
+  position: relative;  
+  left: calc(50% - 175px);
+}
+.controle button{
+  width: 100%;
+  height: 70px;  
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Belleza';
+  color: #fff;
+  background-color: #613d1a;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.controle button:hover{
+  background-color: #42280e;
+}
