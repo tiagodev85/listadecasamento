@@ -31,7 +31,7 @@ module.exports = {
         controle: "calc(50% - 175px)",
       },
       backgroundImage: {
-        "fundo-home": "url('./assets/png_20221129_184952_0000.png')",
+        fundo: "url('./assets/fundo.png')",
         casal: "url('./assets/AirBrush_20221127204040.jpg')",
       },
       colors: {

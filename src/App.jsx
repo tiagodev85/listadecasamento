@@ -1,9 +1,9 @@
 import "./App.css";
-import "./AppMobile.css";
+// import "./AppMobile.css";
 
 function App() {
   return (
-    <div id="container" className="smartphone:ct-sm">
+    <div id="container" className="smartphone:ct-sm desktop:ct-lg">
       <div id="content" className="smartphone:c-sm desktop:c-lg">
         <div id="bandeirola" className="smartphone:band-sm  desktop:band-lg">
           <span>jan</span>
@@ -11,7 +11,7 @@ function App() {
           <span>23</span>
         </div>
         <div id="title" className="smartphone:t-sm desktop:t-lg">
-          <div className="smartphone:text-sm">
+          <div className="smartphone:text-sm desktop:text-lg">
             <h3>lista de</h3>
             <h1>casamento</h1>
           </div>
