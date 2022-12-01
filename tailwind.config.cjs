@@ -9,7 +9,7 @@ module.exports = {
     },
     screens: {
       tablet: "640px",
-      smartphone: "360px",      
+      smartphone: "360px",
       desktop: "1024px",
     },
     fontFamily: {
