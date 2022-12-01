@@ -1,33 +1,31 @@
 import "./App.css";
 
-import casal from "./assets/casal.jpeg";
-
 function App() {
   return (
     <>
-      <div className="container">
-        <div className="bandeirola">
+      <div id="container" className="smartphone:c-sm desktop:c-lg">
+        <div id="bandeirola" className="smartphone:b30  desktop:b60">
           <span>jan</span>
           <span>20</span>
           <span>23</span>
         </div>
-        <div className="title">
+        <div id="title" className="smartphone:t-sm desktop:t-lg">
           <h3>lista de</h3>
           <h1>casamento</h1>
         </div>
-        <div className="bg-img"></div>
-        <div className="title-casal">
+        <div id="photo" className="smartphone:p-sm desktop:p-lg"></div>
+        <div className="smartphone:n-sm desktop:n-lg">
           <h1>Tiago e Laís</h1>
         </div>
       </div>
-      <div className="versiculo">
-        <p>
+      <div id="versiculo" className="smartphone:v-sm desktop:v-lg">
+        <p className="m-auto w-[60%] items-center text-versiculo text-5xl">
           "Bem sei eu que tudo podes, e que nenhum dos teus propósitos podem ser
-          impedidos."          
+          impedidos."
         </p>
         <span>Jó 42:2</span>
       </div>
-      <div className="agradecimento">
+      <div id="agradecimento" className="smartphone:a-sm desktop:a-lg">
         <p>
           De uma maneira inesperada e improvável, Deus nos uniu. Foram muitos os
           desafios superados ao longo desses 11 anos. Hoje, estamos muito
@@ -35,7 +33,7 @@ function App() {
           abencoados por tê-lo(a) em nossos dias.
         </p>
       </div>
-      <div className="controle">
+      <div className="smartphone:btn-sm desktop:btn-lg">
         <button>nos presenteie</button>
       </div>
     </>

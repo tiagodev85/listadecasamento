@@ -1,8 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Angella';
+  src: url(./assets/AngellaWhite.otf);
 }
-body{
-  background-image: url(./assets/png_20221129_184952_0000.png);
+
+@font-face {
+  font-family: 'Belleza';
+  src: url(./assets/Belleza-Regular.ttf);
 }
