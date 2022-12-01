@@ -1,147 +1,249 @@
-@font-face {
-  font-family: 'Angella';
-  src: url(./assets/AngellaWhite.otf);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@font-face {
-  font-family: 'Belleza';
-  src: url(./assets/Belleza-Regular.ttf);
-}
+@layer base {
+  /* CONTAINER */
+  .c-sm{
+    @apply
+    relative
+    top-0
+    w-full
+    h-meio    
+  }  
+  .c-lg{
+    @apply
+    w-[70%]
+    h-screen
+    m-auto
+  }  
+  /* BANDEIROLA E TITULO */
+  .b30{
+    @apply
+    absolute
+    top-0
+    left-[5%]
+    border-30
+    border-versiculo
+    w-14
+    h-40
+    border-b-20
+    border-b-transparent
+    box-border
+    text-2xl
+    flex
+    flex-col
+    items-center
+    font-Belleza
+    uppercase
+    text-white
+  }
+  .b60{
+    @apply
+    border-60
+    w-120
+    h-250
+    text-4xl
+    font-black
+    border-b-30
+    absolute
+    left-[10%]
+  }
+  .t-sm{
+    @apply    
+    absolute
+    top-[3%]    
+    left-[25%]
+    flex
+    flex-col
+    text-center    
+    uppercase
+    font-Belleza
+    text-title    
+  }
+  .t-sm h3{
+    @apply
+    text-base
+    tracking-[5px]
+  }
+  .t-sm h1{
+    @apply
+    text-4xl
+    tracking-[5px]
+  }
+  .t-lg{
+    @apply    
+    absolute
+    top-[3%]
+    right-[15%]
+  }
+  .t-lg h3{
+    @apply
+    text-2xl
+    tracking-[8px]
+  }
+  .t-lg h1{
+    @apply
+    text-7xl
+    tracking-[8px]
+  }
 
-.container {
-  width: 1024px;
-  height: 1024px;
-  position: relative;
-  left: calc(50% - 512px);
-  /* border: 1px solid #000; */
-}
+  /* FOTO */
+  .p-sm{
+    @apply
+    bg-casal
+    bg-cover
+    bg-center
+    bg-no-repeat
+    w-full
+    h-[50%]    
+    absolute
+    bottom-1/4    
+    left-0
+    z-[-1]
+  }  
+  .p-lg{
+    @apply    
+    w-full
+    h-[75%]
+    bg-contain
+    top-[15%]
+    left-0    
+  }
 
-.bandeirola {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-transform: uppercase;
-  font-family: 'Belleza';
-  font-size: 34px;
-  font-weight: bold;
-  color: #fff;
-  position: absolute;
-  left: 5%;
-  border: solid #613d1a;
-  width: 120px;
-  height: 250px;
-  border-width: 60px;
-  border-bottom-width: 30px;
-  box-sizing: border-box;
-  border-bottom-color: transparent;
-}
+  /* NOMES */
+  .n-sm{
+    @apply    
+    w-full
+    h-[30%]    
+    absolute    
+    bottom-[10%]
+    flex
+    justify-center        
+    items-center        
+    font-Angella
+  }
+  .n-sm h1{
+    @apply
+    w-full
+    text-center
+    text-[6rem]    
+    text-title
+    text-shadow
+  }
+  .n-lg{
+    @apply
+    bottom-[-5%]
+  }
+  .n-lg h1{
+    @apply
+    text-[15rem]    
+  }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: absolute;
-  right: 15%;
-  top: 3%;
-  text-transform: uppercase;
-  font-family: 'Belleza';
-  color: #805730;
-}
-.title h3{
-  font-size: 28px;
-  font-weight: 100;
-  letter-spacing: 10px;
-}
-.title h1 {
-  font-weight: 300;
-  font-size: 70px;
-  letter-spacing: 5px;
-}
+  /* VERSICULO */
+  .v-sm{
+    @apply
+    w-full    
+    h-[140px]    
+    flex      
+    flex-col    
+    justify-start    
+    font-Belleza
+    text-justify
+  }
+  .v-sm p{
+    @apply
+    w-10/12    
+    text-xl    
+  }
+  .v-sm span{
+    @apply
+    text-base
+    text-title    
+    m-auto
+    w-10/12
+    text-right
+  }  
+  .v-lg{
+    @apply
+    w-9/12 
+    h-[200px]   
+    m-auto
+    mt-32
+  }
+  .v-lg p{
+    @apply
+    text-5xl
+    text-justify
+    w-10/12
+  }
+  .v-lg span{
+    @apply        
+    text-2xl
+    m-auto    
+  }
 
-.bg-img {
-  width: 1024px;
-  height: 100%;
-  position: absolute;
-  left: calc(50% - 512px);
-  top: 15%;
-  z-index: -1;
-  background-image: url(./assets/AirBrush_20221127204040.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+  /* AGRADECIMENTO */
+  .a-sm{
+    @apply
+    w-full
+    h-[170px]    
+    p-4    
+    font-Belleza
+    text-title
+    text-lg        
+  }
+  .a-sm p{
+    @apply    
+    text-justify
+    indent-3   
+  }
+  .a-lg{
+    @apply
+    w-9/12
+    h-[200px]
+    mt-9
+    m-auto
+  }
+  .a-lg p{
+    @apply    
+    w-10/12
+    m-auto
+    text-3xl
+  }
 
-.title-casal {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 6%;
-  font-family: 'Angella';
-}
-
-.title-casal h1 {
-  font-size: 14rem;
-  font-weight: 200;
-  color: #805730;
-  text-shadow: 8px 6px 3px rgba(255, 255, 255, 0.486);
-}
-
-.versiculo {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-  font-family: 'Belleza';
-}
-
-.versiculo p {
-  margin: auto;
-  width: 60%;
-  text-align: justify;
-  font-size: 2.5rem;
-  color: #613d1a;
-}
-.versiculo span{
-  width: 60%;  
-  margin: auto;
-  color: #613d1a;
-  font-size: 24px;
-  text-align: right;
-}
-
-.agradecimento {  
-  width: 100%;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  font-family: 'Belleza';
-  align-items: center;
-}
-
-.agradecimento p {
-  width: 60%;
-  font-size: 2.5rem;
-  text-align: justify;
-  color: #805730;  
-}
-.controle{
-  width: 350px; 
-  height: 150px;
-  position: relative;  
-  left: calc(50% - 175px);
-}
-.controle button{
-  width: 100%;
-  height: 70px;  
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-family: 'Belleza';
-  color: #fff;
-  background-color: #613d1a;
-  border: none;
-  border-radius: 35px;
-  cursor: pointer;
-}
-.controle button:hover{
-  background-color: #42280e;
+  /* BOTAO NOS PRESENTEIE */
+  .btn-sm{
+    @apply    
+    w-full
+    h-16
+    flex
+    justify-center
+  }
+  .btn-sm button{
+    @apply
+    w-40
+    h-10
+    text-white
+    text-sm
+    font-Belleza
+    uppercase
+    bg-versiculo
+    rounded-3xl
+    hover:bg-button-hover
+    cursor-pointer
+    mt-7
+  }  
+  .btn-lg{
+    @apply        
+    mt-0
+    mb-20
+    h-20
+  }
+  .btn-lg button{
+    @apply
+    w-64
+    h-20
+    text-2xl 
+  }
 }
