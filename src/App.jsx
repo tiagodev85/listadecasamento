@@ -1,17 +1,20 @@
 import "./App.css";
+import "./AppMobile.css";
 
 function App() {
   return (
-    <>
-      <div id="container" className="smartphone:c-sm desktop:c-lg">
-        <div id="bandeirola" className="smartphone:b30  desktop:b60">
+    <div id="container" className="smartphone:ct-sm">
+      <div id="content" className="smartphone:c-sm desktop:c-lg">
+        <div id="bandeirola" className="smartphone:band-sm  desktop:band-lg">
           <span>jan</span>
           <span>20</span>
           <span>23</span>
         </div>
         <div id="title" className="smartphone:t-sm desktop:t-lg">
-          <h3>lista de</h3>
-          <h1>casamento</h1>
+          <div className="smartphone:text-sm">
+            <h3>lista de</h3>
+            <h1>casamento</h1>
+          </div>
         </div>
         <div id="photo" className="smartphone:p-sm desktop:p-lg"></div>
         <div className="smartphone:n-sm desktop:n-lg">
@@ -22,8 +25,8 @@ function App() {
         <p className="m-auto w-[60%] items-center text-versiculo text-5xl">
           "Bem sei eu que tudo podes, e que nenhum dos teus propósitos podem ser
           impedidos."
+        <span>(Jó 42,2)</span>
         </p>
-        <span>Jó 42:2</span>
       </div>
       <div id="agradecimento" className="smartphone:a-sm desktop:a-lg">
         <p>
@@ -36,7 +39,7 @@ function App() {
       <div className="smartphone:btn-sm desktop:btn-lg">
         <button>nos presenteie</button>
       </div>
-    </>
+    </div>
   );
 }
 
