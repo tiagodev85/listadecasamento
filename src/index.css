@@ -11,3 +11,10 @@
   font-family: 'Belleza';
   src: url(./assets/Belleza-Regular.ttf);
 }
+
+@layer base{
+  .fundo{
+    @apply
+    bg-fundo
+  }
+}
