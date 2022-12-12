@@ -1,0 +1,300 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  /* DESKTOP */
+  /* CONTENT */
+  .lista-lg {
+    @apply 
+    w-full 
+    h-screen
+  }
+  .toolbar-lg h1 {
+    @apply
+    text-7xl
+  }
+.toolbar-lg button{
+  @apply
+  text-base
+}
+/* LISTA DE PRESENTES */
+.presentes-lg {
+  @apply
+  w-full
+  grid    
+  gap-16
+  grid-cols-4
+}
+.temas-lg{
+  @apply  
+  w-[60%]
+  h-20  
+}
+.end-lg h2{
+  @apply
+  w-full    
+  text-[1.2rem]
+  font-bold
+}
+.end-lg span{
+  @apply
+  text-[.8rem]
+}
+.agradecimento-lg{
+  @apply
+  w-[30%]
+  h-[50%]
+}
+.agradecimento-lg h1{
+  @apply
+  text-9xl
+  mt-20
+}
+
+
+  /* MOBILE */
+  /* CONTENT */
+  .lista-sm {
+    @apply 
+    relative 
+    top-0 
+    w-full 
+    h-[45%]
+    text-versiculo
+  }
+
+  /* TOOLBAR   */
+  .toolbar-sm {
+    @apply 
+    w-full 
+    h-[15%]
+    flex 
+    flex-row 
+    items-center 
+    relative 
+    font-Belleza 
+    uppercase    
+  }
+
+  .toolbar-sm h1 {
+    @apply 
+    absolute 
+    bottom-0 
+    left-[50%] 
+    translate-x-[-50%] 
+    text-5xl
+  }
+
+  .toolbar-sm button {
+    @apply 
+    absolute 
+    right-2 
+    top-1 
+    uppercase 
+    text-[.7rem]
+  }
+
+  /* CONTENT LISTA */
+  .content-lista-sm {
+    @apply
+    w-full    
+    bg-transparent
+    p-5
+    flex
+    flex-col
+    items-center    
+    gap-5
+    font-Belleza
+  }
+  /* INFO */
+  .info-sm {
+    @apply
+    w-9/12
+    flex
+    gap-2
+    flex-col
+    items-center
+  }
+  .info-sm label {
+    @apply
+    text-base
+    uppercase
+  }
+  .info-sm input{
+    @apply
+    w-full
+    rounded-[5px]
+    text-center
+    h-8
+    border-[1px]
+  }
+  .content-lista-sm h2 {
+    @apply    
+    text-xl
+    text-center
+    uppercase
+  }
+  /* LISTA DE PRESENTES */
+  .presentes-sm {
+    @apply
+    w-full
+    grid    
+    gap-16
+    grid-cols-1
+  }
+  .presentes-sm .return{
+    @apply
+    w-full    
+    flex
+    flex-col
+    items-center    
+  }  
+  .presentes-sm img{
+    @apply
+    w-full
+    opacity-80   
+    rounded-[20%]    
+    hover:opacity-100
+  }
+  .presentes-sm span{
+    @apply
+    w-full
+    text-center    
+    uppercase
+  }
+
+  /* MENSAGEM */
+  .msg-sm{
+    @apply
+    w-full
+    flex
+    flex-col
+    gap-5
+    items-center  
+    mt-20      
+  }
+  .msg-sm h1{
+    @apply    
+    text-2xl
+    text-center
+    uppercase
+  }
+  .msg-sm p{
+    @apply
+    text-justify
+  }
+  .temas-sm{
+    @apply
+    w-full
+    h-20
+    p-1    
+    text-sm
+    flex
+    flex-col
+    gap-2
+    items-center        
+    uppercase
+    text-white    
+    bg-button-hover
+  } 
+  .nome-cor-sm{
+    @apply
+    w-full
+    flex
+    flex-row
+    justify-around    
+  }
+  .nome-cor{
+    @apply
+    w-full 
+    text-[.8rem]   
+    text-center        
+  }
+  .tabela-cores-sm{
+    @apply
+    w-full        
+    flex
+    flex-row
+    justify-around
+  }
+  .tabela-cores-sm .cores{
+    @apply
+    w-8
+    h-8
+  }
+  .tabela-cores-sm .cor-1{
+    @apply
+    bg-bege
+  }
+  .tabela-cores-sm .cor-2{
+    @apply
+    bg-white
+  }
+  .tabela-cores-sm .cor-3{
+    @apply
+    bg-cinza
+  }
+  .tabela-cores-sm .cor-4{
+    @apply
+    bg-creme
+  }
+  .tabela-cores-sm .cor-5{
+    @apply
+    bg-pinus
+  }
+
+  /* ENDERECOS */
+  .enderecos-sm{
+    @apply
+    mt-5
+    w-full    
+    bg-title    
+    p-2
+    flex
+    flex-col
+    text-white    
+    uppercase    
+  }
+  .end {
+    @apply
+    flex
+    flex-col
+    text-center
+  }
+  .end h2{
+    @apply
+    w-full    
+    text-[.8rem]
+    font-bold
+  }
+  .end span{
+    @apply
+    text-[.6rem]
+  }
+  .end-2 {
+    @apply
+    mt-5
+  }
+  /* AGRADECIMENTOS */
+  .agradecimento-sm {
+    @apply
+    flex    
+    items-center
+    justify-center
+    m-auto    
+    w-[65%]
+    h-56    
+  }
+  .agradecimento-sm h1{
+    @apply    
+    text-versiculo    
+    tracking-[4px]
+    text-center
+    font-Angella
+    font-bold
+    -rotate-6
+    text-6xl
+  }
+}

@@ -1,0 +1,55 @@
+{
+	"presentes": [
+		{
+			"id": 1,
+			"item": "Panela de pressão",
+			"link": "l1nq.com/JbzSb",
+			"image": "./items/panela.png"
+		},
+		{
+			"id": 2,
+			"item": "Cuscuzeiro",
+			"link": "encurtador.com.br/giKU2",
+			"image": "./items/cuzcuz.jpg"
+		},
+		{
+			"id": 3,
+			"item": "Liquidificador",
+			"link": "encurtador.com.br/hipsR",
+			"image": "./items/liquidificador.png"
+		},
+		{
+			"id": 4,
+			"item": "Jogo de 6 Taças de Vidro Sobremesa",
+			"link": "encurtador.com.br/kmNP9",
+			"image": "./items/cristal.jpg"
+		},
+		{
+			"id": 5,
+			"item": "Jogo de copos",
+			"link": "encurtador.com.br/cvwGW",
+			"image": "./items/copos.jpg"
+		},
+		{
+			"id": 6,
+			"item": "Garrafa térmica",
+			"link": "encurtador.com.br/jquJ3",
+			"image": "./items/termica.png"
+		},
+		{
+			"id": 7,
+			"item": "Caixa de armazenamento de temperos",
+			"link": "encurtador.com.br/bsDPV",
+			"image": "./items/tempero.jpg"
+		},
+		{
+			"id": 8,
+			"item": "Conjunto Jogo De 2 Formas Em Silicone Antiaderente",
+			"link": "encurtador.com.br/qtwI8",
+			"image": "./items/formas.jpg"
+		}
+	]
+	
+	
+	
+}
