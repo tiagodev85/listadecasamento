@@ -1,5 +1,5 @@
 import "./home.css";
-// import "./AppMobile.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -37,7 +37,9 @@ function Home() {
         </p>
       </div>
       <div className="smartphone:btn-sm desktop:btn-lg">
-        <button>nos presenteie</button>
+        <button>
+          <Link to={"/lista"}>Nos presenteie</Link>
+        </button>
       </div>
     </>
   );

@@ -38,6 +38,10 @@ module.exports = {
         title: "#805730",
         versiculo: "#613d1a",
         "button-hover": "#42280e",
+        bege: "#e2cbaf",
+        cinza: "#cdc6bf",
+        creme: "#eedccb",
+        pinus: "#d9b181" 
       },
       textShadow: {
         default: "8px 6px 3px rgba(255, 255, 255, 0.486)",
