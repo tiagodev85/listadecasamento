@@ -42,7 +42,7 @@ function Lista() {
             {presentes.map((res) => {
               return (
                 <div key={res.id} className="return">
-                  <a href={"https:" + res.link} target="_blank">
+                  <a href={"https://"+res.link} target="_blank">
                     <img src={res.image} alt={res.image} />
                   </a>
                   <span>{res.item}</span>

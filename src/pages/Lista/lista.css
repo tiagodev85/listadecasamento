@@ -11,6 +11,10 @@
     w-full 
     h-screen
   }
+  .toolbar-lg{
+    @apply
+    h-[15%]
+  }
   .toolbar-lg h1 {
     @apply
     text-7xl
@@ -69,7 +73,7 @@
   .toolbar-sm {
     @apply 
     w-full 
-    h-[15%]
+    h-[5%]    
     flex 
     flex-row 
     items-center 
@@ -81,7 +85,7 @@
   .toolbar-sm h1 {
     @apply 
     absolute 
-    bottom-0 
+    top-5
     left-[50%] 
     translate-x-[-50%] 
     text-5xl
