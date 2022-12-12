@@ -32,7 +32,7 @@ module.exports = {
       },
       backgroundImage: {
         fundo: "url('./assets/fundo.png')",
-        casal: "url('./assets/AirBrush_20221127204040.jpg')",
+        casal: "url('../../assets/casal.jpg')",
       },
       colors: {
         title: "#805730",
