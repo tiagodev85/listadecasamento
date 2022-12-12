@@ -157,7 +157,8 @@
   }  
   .presentes-sm img{
     @apply
-    w-full
+    w-[70%]
+    m-auto
     opacity-80   
     rounded-[20%]    
     hover:opacity-100
