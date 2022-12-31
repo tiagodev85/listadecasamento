@@ -33,9 +33,9 @@ function Mobile({state}) {
         <section id="start">
           <Start />
         </section>
-        <section id="messages">
-          {/* <Mensagens /> */}
-        </section>
+        {/* <section id="messages">
+          <Mensagens />
+        </section> */}
         <section id="lista">
           <Lista />
         </section>
