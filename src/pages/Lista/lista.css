@@ -226,7 +226,7 @@
   .toolbar-sm {
     @apply 
     w-full
-    h-[120px]
+    h-[80px]
     bg-versiculo
     text-white          
     flex      
@@ -408,8 +408,8 @@
     flex    
     items-center
     justify-center
-    mt-10    
-    w-[65%]    
+    mt-5    
+    w-[65%]        
   }
   .agradecimento-sm h1{
     @apply    
