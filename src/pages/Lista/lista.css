@@ -218,7 +218,7 @@
     w-full
     h-screen        
     overflow-scroll
-    scrollbar-hide
+    scrollbar-hide    
     text-versiculo
   }
 
@@ -400,12 +400,13 @@
   /* AGRADECIMENTOS */
   .agradecimento-sm {
     @apply
+    /* border-[1px]
+    border-black */
     flex    
     items-center
     justify-center
-    m-auto    
-    w-[65%]
-    h-56    
+    mt-10    
+    w-[65%]    
   }
   .agradecimento-sm h1{
     @apply    
@@ -415,7 +416,7 @@
     font-Angella
     font-bold
     -rotate-6
-    text-6xl
+    text-4xl
   }
   .voltar-sm{
     @apply
