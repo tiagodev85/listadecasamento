@@ -40,5 +40,16 @@
     gap-1 
     m-auto
   }
-
+  .ct-sm .content{
+    @apply    
+    flex
+    flex-col
+    w-full
+    max-w-full    
+  }
+  .ct-sm .content section{
+    @apply
+    w-full
+    h-screen   
+  }
 }

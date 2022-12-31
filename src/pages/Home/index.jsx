@@ -31,7 +31,7 @@ function Mobile({state}) {
     <div className={"smartphone:ct-sm " + state}>
       <div className="content">
         <section id="start">
-          <Start />
+          <Start />          
         </section>
         {/* <section id="messages">
           <Mensagens />
