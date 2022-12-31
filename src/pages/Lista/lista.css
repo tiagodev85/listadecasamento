@@ -3,26 +3,37 @@
 @tailwind utilities;
 
 @layer base {
-
   /* DESKTOP */
   /* CONTENT */
   .lista-lg {
     @apply 
-    w-full 
+    overflow-scroll
+    scrollbar-hide
+    relative
+    p-5
+    top-0
+    left-[50%]
+    -translate-x-[50%]
+    w-[70%]
     h-screen
+ 
   }
   .toolbar-lg{
-    @apply
-    h-[15%]
+    @apply    
+    w-full 
+    h-[20%]     
+    flex      
+    flex-col   
+    justify-center    
+    items-center
+    text-versiculo
+    font-Belleza 
+    uppercase  
   }
   .toolbar-lg h1 {
     @apply
-    text-7xl
+    text-5xl    
   }
-.toolbar-lg button{
-  @apply
-  text-base
-}
 /* LISTA DE PRESENTES */
 .presentes-lg {
   @apply
@@ -30,33 +41,165 @@
   grid    
   gap-16
   grid-cols-4
+  grid-rows-6  
+}
+.presentes-lg img{
+  @apply
+  w-auto
+}
+.presentes-lg span{
+  @apply
+  block
+  text-center
+  w-full  
+  text-versiculo
+}
+ /* MENSAGEM */
+ .msg-lg{
+  @apply
+  text-versiculo
+  w-full
+  flex
+  flex-col
+  gap-10
+  items-center  
+  mt-20      
+}
+.msg-lg h1{
+  @apply    
+  text-4xl
+  text-center
+  uppercase
+}
+.msg-lg p{
+  @apply
+  text-justify
+  text-xl
 }
 .temas-lg{
-  @apply  
+  @apply
   w-[60%]
   h-20  
+  text-lg
+  flex
+  flex-col
+  gap-1
+  items-center        
+  uppercase
+  text-white    
+  bg-button-hover
+} 
+.nome-cor-lg{
+  @apply
+  w-full
+  flex
+  flex-row
+  justify-around
 }
-.end-lg h2{
+.nome-cor-lg .nome-cor{
+  @apply
+  w-full 
+  text-[1em]   
+  text-center        
+}
+.tabela-cores-lg{
+  @apply
+  w-full        
+  flex
+  flex-row
+  justify-around
+}
+.tabela-cores-lg .cores{
+  @apply
+  w-14
+  h-8
+}
+.tabela-cores-lg .cor-1{
+  @apply
+  bg-bege
+}
+.tabela-cores-lg .cor-2{
+  @apply
+  bg-white
+}
+.tabela-cores-lg .cor-3{
+  @apply
+  bg-cinza
+}
+.tabela-cores-lg .cor-4{
+  @apply
+  bg-creme
+}
+.tabela-cores-lg .cor-5{
+  @apply
+  bg-pinus
+}
+
+/* ENDERECOS */
+#endereco > h2{
+  @apply
+  p-5
+  text-2xl
+  uppercase
+  text-center
+  text-versiculo  
+}
+.enderecos-lg{
+  @apply
+  mt-5
+  m-auto
+  w-[60%]    
+  bg-title    
+  p-1
+  flex
+  flex-col
+  text-white    
+  uppercase    
+}
+.enderecos-lg .end {
+  @apply
+  flex
+  flex-col
+  text-center
+}
+.enderecos-lg .end h2{
   @apply
   w-full    
   text-[1.2rem]
   font-bold
 }
-.end-lg span{
+.enderecos-lg .end span{
   @apply
   text-[.8rem]
 }
+.enderecos-lg .end-2 {
+  @apply
+  mt-5
+}
 .agradecimento-lg{
   @apply
+  m-auto
   w-[30%]
   h-[50%]
+  text-versiculo
+  text-center
+  font-Angella
+  font-bold
 }
 .agradecimento-lg h1{
   @apply
   text-9xl
   mt-20
 }
-
+.voltar-lg{
+  @apply  
+  text-versiculo
+  uppercase
+  absolute
+  top-0
+  right-[50%]
+  rotate-180
+}
 
   /* MOBILE */
   /* CONTENT */
@@ -65,7 +208,8 @@
     relative 
     top-0 
     w-full 
-    h-[45%]
+    h-screen
+    overflow-scroll       
     text-versiculo
   }
 
@@ -112,55 +256,38 @@
     gap-5
     font-Belleza
   }
-  /* INFO */
-  .info-sm {
-    @apply
-    w-9/12
-    flex
-    gap-2
-    flex-col
-    items-center
-  }
-  .info-sm label {
-    @apply
-    text-base
-    uppercase
-  }
-  .info-sm input{
-    @apply
-    w-full
-    rounded-[5px]
-    text-center
-    h-8
-    border-[1px]
-  }
+
   .content-lista-sm h2 {
     @apply    
+    mt-6
+    mb-8
     text-xl
     text-center
     uppercase
   }
   /* LISTA DE PRESENTES */
   .presentes-sm {
-    @apply
+    @apply    
     w-full
+    p-2
     grid    
-    gap-16
-    grid-cols-1
+    gap-2
+    grid-cols-2
   }
   .presentes-sm .return{
-    @apply
+    @apply    
     w-full    
     flex
     flex-col
+    justify-center
     items-center    
   }  
   .presentes-sm img{
-    @apply
-    w-[70%]
-    m-auto
-    opacity-80   
-    rounded-[20%]    
+    @apply    
+    w-full
+    h-[100px]
+    p-2    
+    opacity-80       
     hover:opacity-100
   }
   .presentes-sm span{
@@ -301,5 +428,14 @@
     font-bold
     -rotate-6
     text-6xl
+  }
+  .voltar-sm{
+    @apply
+    text-versiculo
+    uppercase
+    absolute
+    top-[2%] 
+    right-[2%]
+    text-sm
   }
 }

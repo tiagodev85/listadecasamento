@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* MENSAGENS */
+  /* VERSICULO */
+  .msgs-lg {
+    @apply     
+    w-full
+    h-screen     
+    flex 
+    flex-col
+  }
+  .versiculo-lg {
+    @apply    
+    h-full
+    w-full
+    flex
+    justify-center
+  }
+  .versiculo-lg p {
+    @apply 
+    text-5xl 
+    text-center
+  }
+  .versiculo-lg span {
+    @apply 
+    text-xl
+  }
+  /* AGRADECIMENTO */
+  .agra-lg {
+    @apply
+    font-Belleza    
+    m-auto
+    flex
+    justify-center
+    w-[60%] 
+    h-full
+    text-justify
+  }
+  .agra-lg p {
+    @apply 
+    text-4xl
+    text-versiculo
+  }
+  /* BOTAO NOS PRESENTEIE */
+  .btn-lg {
+    @apply 
+    w-[40%]
+    m-auto
+    flex       
+    flex-row    
+    items-center     
+    h-40    
+    relative
+    bottom-[5%]
+  }  
+  .btn-lg #scrollDown-seta-start{
+    @apply
+    absolute
+    w-[30px]
+    bottom-0
+    rotate-180
+    left-0        
+  }
+  .btn-lg #scrollDown-seta-lista{
+    @apply        
+    absolute
+    right-0
+    bottom-0
+    w-[30px]    
+  }
+  /* MOBILE */    
+  .msgs-sm {
+    @apply         
+    w-full
+    h-screen
+    flex     
+    flex-col 
+    absolute
+    top-[100%]
+  }
+
+  .versiculo-sm {
+    @apply 
+    w-full 
+    absolute 
+    top-0
+  }
+
+  .versiculo-sm p {
+    @apply text-xl text-center
+  }
+
+  .versiculo-sm span {
+    @apply text-xl
+  }
+
+  /* AGRADECIMENTO */
+  .agra-sm {
+    @apply w-full absolute top-[5%]
+  }
+
+  .agra-sm p {
+    @apply text-base
+  }
+}

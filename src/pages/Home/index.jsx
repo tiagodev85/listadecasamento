@@ -1,48 +1,64 @@
+import Start from "../../Components/Start";
+import Mensagens from "../../Components/Messages";
+import Lista from "../Lista";
 import "./home.css";
-import { Link } from "react-router-dom";
+import CheckDevice from "../../Components/CheckDevice/checkDevice";
+import Seta from "../../Components/Seta";
+import Messages from "../../Components/Messages";
 
 function Home() {
+  const isMobile = CheckDevice();
+  console.log(isMobile);
+  if (isMobile) {
+    return (
+      <>
+        <Mobile state="visible"/>
+        <Desktop state="hidden"/>
+      </>
+    )
+  } else {
+    return (
+      <>
+        <Desktop state="visible"/>
+        <Mobile state="hidden"/>
+      </>
+    )
+  }
+}
+
+function Mobile({state}) {
   return (
-    <>
-      <div id="content" className="smartphone:c-sm desktop:c-lg">
-        <div id="bandeirola" className="smartphone:band-sm  desktop:band-lg">
-          <span>jan</span>
-          <span>20</span>
-          <span>23</span>
-        </div>
-        <div id="title" className="smartphone:t-sm desktop:t-lg">
-          <div className="smartphone:text-sm desktop:text-lg">
-            <h3>lista de</h3>
-            <h1>casamento</h1>
-          </div>
-        </div>
-        <div id="photo" className="smartphone:p-sm desktop:p-lg"></div>
-        <div className="smartphone:n-sm desktop:n-lg">
-          <h1>Tiago e Laís</h1>
-        </div>
+    <div className={"smartphone:ct-sm " + state}>
+      <div className="content">
+        <section id="start">
+          <Start />
+        </section>
+        <section id="messages">
+          {/* <Mensagens /> */}
+        </section>
+        <section id="lista">
+          <Lista />
+        </section>
       </div>
-      <div id="versiculo" className="smartphone:v-sm desktop:v-lg">
-        <p className="m-auto w-[60%] items-center text-versiculo text-5xl">
-          "Bem sei eu que tudo podes, e que nenhum dos teus propósitos podem ser
-          impedidos."
-          <span>(Jó 42,2)</span>
-        </p>
-      </div>
-      <div id="agradecimento" className="smartphone:a-sm desktop:a-lg">
-        <p>
-          De uma maneira inesperada e improvável, Deus nos uniu. Foram muitos os
-          desafios superados ao longo desses 11 anos. Hoje, estamos muito
-          felizes em compartilhar com você mais uma vitória. Somos gratos e
-          abencoados por tê-lo(a) em nossos dias.
-        </p>
-      </div>
-      <div className="smartphone:btn-sm desktop:btn-lg">
-        <button>
-          <Link to={"/lista"}>Nos presenteie</Link>
-        </button>
-      </div>
-    </>
+    </div>
   );
 }
 
+function Desktop({state}) {
+  return (
+    <div className={"desktop:ct-lg " + state}>
+      <div className="content">
+        <section id="start">            
+          <Start />
+        </section>
+        <section id="messages">
+          <Messages />           
+        </section>
+        <section id="lista"> 
+          <Lista />
+        </section>
+      </div>
+    </div>
+  );
+}
 export default Home;

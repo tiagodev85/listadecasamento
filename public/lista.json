@@ -2,33 +2,33 @@
 	"presentes": [
 		{
 			"id": 1,
-			"item": "Panela de pressão",
-			"link": "l1nq.com/JbzSb",
-			"image": "./items/panela.png"
-		},
-		{
-			"id": 2,
 			"item": "Cuscuzeiro",
 			"link": "encurtador.com.br/giKU2",
 			"image": "./items/cuzcuz.jpg"
 		},
 		{
+			"id": 2,
+			"item": "Jogo de tigelas para sobremesa 6 pçs",
+			"link": "encurtador.com.br/nszIW",
+			"image": "./items/tigelassobremesa.webp"
+		},
+		{
 			"id": 3,
-			"item": "Liquidificador",
-			"link": "encurtador.com.br/hipsR",
-			"image": "./items/liquidificador.png"
+			"item": "Assadeira de vidro temperado",
+			"link": "encurtador.com.br/ilzO8",
+			"image": "./items/assadeiravidro.jpg"
 		},
 		{
 			"id": 4,
-			"item": "Jogo de 6 Taças de Vidro Sobremesa",
-			"link": "encurtador.com.br/kmNP9",
-			"image": "./items/cristal.jpg"
-		},
+			"item": "Jogo de copos c/6",
+			"link": "encurtador.com.br/gjCY2",
+			"image": "./items/copos.jpg"
+		},		
 		{
 			"id": 5,
-			"item": "Jogo de copos",
-			"link": "encurtador.com.br/cvwGW",
-			"image": "./items/copos.jpg"
+			"item": "Boleira de madeira",
+			"link": "encurtador.com.br/vLSVZ",
+			"image": "./items/boleiragrande.jpg"
 		},
 		{
 			"id": 6,
@@ -44,9 +44,105 @@
 		},
 		{
 			"id": 8,
-			"item": "Conjunto Jogo De 2 Formas Em Silicone Antiaderente",
-			"link": "encurtador.com.br/qtwI8",
+			"item": "Jogo de banheiro cerâmica",
+			"link": "encurtador.com.br/GJOZ2",
+			"image": "./items/jogobanheiro.jpg"
+		},
+		{
+			"id": 9,
+			"item": "Descanso de panela 4 unidades",
+			"link": "encurtador.com.br/sxFM0",
+			"image": "./items/descansopanela.jpg"
+		},
+		{
+			"id": 10,
+			"item": "Suporte Escorredor Porta Pratos 2 unidades",
+			"link": "encurtador.com.br/ezNUV",
+			"image": "./items/suportedivisor.jpg"
+		},
+		{
+			"id": 11,
+			"item": "Jogo de facas tramotina 6 pçs",
+			"link": "encurtador.com.br/kmD03",
+			"image": "./items/jogofacas.webp"
+		},
+		{
+			"id": 12,
+			"item": "Lixeira com pedal 3L",
+			"link": "https://www.ferreiracosta.com/Produto/137115/lixeira-com-pedal-3l-em-aco-inox-redonda-prata-bianchini",
+			"image": "./items/lixeira.jpg"
+		},
+		{
+			"id": 13,
+			"item": "Purificador de água",
+			"link": "https://m.magazineluiza.com.br/purificador-de-agua-vivax-branco-ibbl/p/aaa88e22jj/ep/bpar/?seller_id=distral&partner_id=69097&gclsrc=aw.ds",
+			"image": "./items/purificador.webp"
+		},
+		{
+			"id": 14,
+			"item": "Kit formas",
+			"link": "https://shopee.com.br/product/252564405/20528475050?smtt=0.277171216-1672326476.9",
 			"image": "./items/formas.jpg"
+		},
+		{
+			"id": 15,
+			"item": "Liquidificador",
+			"link": "https://www.americanas.com.br/produto/134418963?voltagem=220V&condition=NEW",
+			"image": "./items/liquidificador.webp"
+		},
+		{
+			"id": 16,
+			"item": "Faqueiro inox 20 pçs Laguna",
+			"link": "https://www.americanas.com.br/produto/2556900151?cor=Inox&condition=NEW",
+			"image": "./items/faqueiro.webp"
+		},
+		{
+			"id": 17,
+			"item": "Aparelho de jantar Donna Branco 16 pçs",
+			"link": "https://www.ferreiracosta.com/Produto/412026/aparelho-de-jantar-donna-branco-de-ceramica-16-pecas-biona",
+			"image": "./items/jantar.jpg"
+		},
+		{
+			"id": 18,
+			"item": "Cortina longa",
+			"link": "https://santistadecora.com.br/pr/cortina-longa-textura-em-relevo-calais/BT01TCT2ZCA8372",
+			"image": "./items/cortina.jpeg"
+		},
+		{
+			"id": 19,
+			"item": "Panela de pressão",
+			"link": "https://m.magazineluiza.com.br/panela-de-pressao-tramontina-vancouver-45-litros-aluminio-grafite/p/cbcjkj8gkb/ud/udpp/",
+			"image": "./items/panelapressao.webp"
+		},
+		{
+			"id": 20,
+			"item": "Ventilador de mesa",
+			"link": "https://m.magazineluiza.com.br/ventilador-de-mesa-mondial-turbo-vt-40-nb-40cm-3-velocidades/p/231221900/ar/arvm/?seller_id=magazineluiza&partner_id=66786&gclsrc=aw.ds",
+			"image": "./items/ventilador.webp"
+		},
+		{
+			"id": 21,
+			"item": "Mop giratório",
+			"link": "https://www.ferreiracosta.com/Produto/415010/mop-giratorio-com-balde-centrifuga-8l-verde-bianchini?region_id=333333",
+			"image": "./items/mopi.jpg"
+		},
+		{
+			"id": 22,
+			"item": "Garrafa térmica",
+			"link": "encurtador.com.br/jquJ3",
+			"image": "./items/termica.png"
+		},
+		{
+			"id": 23,
+			"item": "Lavadora de roupas",
+			"link": "https://m.casasbahia.com.br/lavadora-de-roupas-electrolux-les09-essential-com-diluicao-inteligente-8-5kg-branca-55010660.html",
+			"image": "./items/lavadora.webp"
+		},
+		{
+			"id": 24,
+			"item": "Kit 5 colheres inox",
+			"link": "https://shopee.com.br/product/432771697/21031826951?smtt=0.277171216-1672154412.9",
+			"image": "./items/colheres.jpg"
 		}
 	]
 	

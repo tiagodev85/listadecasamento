@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* DESKTOP */
+  /* CONTENT */
+  .content-lg {
+    @apply         
+    w-full 
+    flex 
+    flex-col 
+    items-center
+  }
+  /* TITULO */
+  .top-lg {
+    @apply 
+    w-full 
+    flex 
+    flex-col 
+    items-center
+  }
+  .title-lg {
+    @apply 
+    w-full 
+    font-Belleza 
+    uppercase 
+    text-center 
+    flex 
+    items-center
+  }
+  .text-title-lg {
+    @apply 
+    text-title 
+    w-full 
+    p-3
+  }
+  .text-title-lg h3 {
+    @apply 
+    text-2xl 
+    tracking-[8px]
+  }
+  .text-title-lg h1 {
+    @apply 
+    text-7xl 
+    tracking-[8px]
+  }
+  /* FOTO */
+  .photo-lg {
+    @apply 
+    w-[1500px] 
+    h-[550px] 
+    bg-casal 
+    bg-no-repeat 
+    bg-contain 
+    bg-center
+  }
+  /* NOMES */
+  .nome-lg {
+    @apply 
+    absolute 
+    bottom-[10%] 
+    w-full 
+    font-Angella
+  }
+  .nome-lg h1 {
+    @apply 
+    text-center 
+    text-title 
+    text-shadow 
+    text-[10rem]
+  }
+  .seta-start-lg{
+    @apply
+    w-full
+    h-[100px]    
+    absolute
+    bottom-[5%]
+  }
+  /* MOBILE */
+  /* CONTENT */
+  .content-sm {
+    @apply relative top-0 w-full h-screen overflow-hidden
+  }
+
+  /* TITULO */
+  .title-sm {
+    @apply absolute top-[2%] flex justify-center items-center w-full text-center uppercase font-Belleza text-title
+  }
+
+  .text-title-sm {
+    @apply w-full flex flex-col
+  }
+
+  .title-sm h3 {
+    @apply text-base tracking-[5px]
+  }
+
+  .title-sm h1 {
+    @apply text-4xl tracking-[5px]
+  }
+
+  /* FOTO */
+  .photo-sm {
+    @apply bg-casal bg-contain bg-center bg-no-repeat w-full h-[35%] absolute top-[12%] left-0
+    /* z-[-1] */
+  }
+
+  /* NOMES */
+  .nome-sm {
+    @apply w-full h-[20%] absolute top-[38%] flex justify-center items-center font-Angella
+  }
+
+  .nome-sm h1 {
+    @apply w-full text-center text-[6rem] text-title text-shadow
+  }
+
+  /* VERSICULO */
+  .versiculo-sm {
+    @apply absolute top-[55%] w-full flex font-Belleza text-justify
+  }
+
+  .versiculo-sm p {
+    @apply w-10/12 text-xl
+  }
+
+  .versiculo-sm span {
+    @apply text-base text-title mx-[5%]
+  }
+
+  /* AGRADECIMENTO */
+  .agra-sm {
+    @apply absolute top-[60%] w-full h-[30%] p-4 flex items-center font-Belleza text-title text-lg
+  }
+
+  .agra-sm p {
+    @apply text-justify
+  }
+
+  /* BOTAO NOS PRESENTEIE */
+  /* .btn-sm {
+    @apply absolute top-[100%] w-full flex justify-center items-center
+  }
+
+  .btn-sm button {
+    @apply w-[50%] h-[40%] text-white text-base font-Belleza uppercase bg-versiculo rounded-3xl hover:bg-button-hover cursor-pointer
+  } */
+}

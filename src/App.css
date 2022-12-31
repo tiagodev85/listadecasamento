@@ -3,28 +3,15 @@
 @tailwind utilities;
 
 @layer base { 
-  /* DESKTOP */
+  /* DESKTOP */ 
   /* CONTAINER */
-  .ct-lg{
+  body{
     @apply    
-    relative
-    w-[70%]
-    h-full  
-    flex
-    flex-col
-    gap-1
+    overflow-hidden
+    scrollbar-hide  
+  }    
+  html{
+    @apply
+    scroll-smooth
   }
-  
-    /* MOBILE */
-  /* CONTAINER */
-  .ct-sm{
-    @apply    
-    w-full
-    h-[915px]    
-    flex
-    flex-col
-    gap-1
-    m-auto
-  }
-  
 }
