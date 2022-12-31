@@ -117,14 +117,13 @@ function Lista() {
       <div id="content" className="smartphone:lista-sm">
         {/* TOPO */}
         <div id="toolbar" className="smartphone:toolbar-sm">
+          <h2>Como deseja nos presentear?</h2>
           <div className="voltar-sm">
-            <Link to={"/"}>Home</Link>
-          </div>
-          <h1>presentes</h1>
+            <Link to={"/"}>Voltar</Link>
+          </div>          
         </div>
         {/* LISTA DE PRESENTES */}
-        <div id="content" className="smartphone:content-lista-sm">
-          <h2>Como deseja nos presentear?</h2>
+        <div id="content" className="smartphone:content-lista-sm">          
           <div id="lista-presentes" className="smartphone:presentes-sm">
             {presentes.map((res) => {
               return (

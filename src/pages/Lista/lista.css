@@ -212,9 +212,7 @@
   /* MOBILE */
   /* CONTENT */
   .lista-sm {
-    @apply 
-    relative 
-    top-0 
+    @apply     
     w-full 
     h-screen
     overflow-scroll       
@@ -225,32 +223,20 @@
   .toolbar-sm {
     @apply 
     w-full 
-    h-[5%]    
-    flex 
-    flex-row 
-    items-center 
-    relative 
+    h-[15%]        
+    flex      
+    flex-col
+    gap-4
+    items-center
+    justify-center
+    text-versiculo
     font-Belleza 
-    uppercase    
+    uppercase   
   }
-
-  .toolbar-sm h1 {
-    @apply 
-    absolute 
-    top-5
-    left-[50%] 
-    translate-x-[-50%] 
-    text-5xl
-  }
-
-  .toolbar-sm button {
-    @apply 
-    absolute 
-    right-2 
-    top-1 
-    uppercase 
-    text-[.7rem]
-  }
+  .toolbar-sm h2 {
+    @apply             
+    text-xl
+  }  
 
   /* CONTENT LISTA */
   .content-lista-sm {
@@ -441,9 +427,6 @@
     @apply
     text-versiculo
     uppercase
-    absolute
-    top-[2%] 
-    right-[2%]
-    text-sm
+    text-[.8rem]
   }
 }
