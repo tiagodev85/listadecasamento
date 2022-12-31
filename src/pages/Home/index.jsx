@@ -28,7 +28,7 @@ function Home() {
 
 function Mobile({state}) {
   return (
-    <div className={"smartphone:ct-sm " + state}>
+    <div id="home" className={"smartphone:ct-sm " + state}>
       <div className="content">
         <section id="start">
           <Start />          

@@ -57,8 +57,8 @@ function Lista() {
                 <div key={res.id} className="return">
                   <a href={"https://" + res.link} target="_blank">
                     <span>
-                      <img src={res.image} alt={res.image} />
                       {res.item}
+                      <img src={res.image} alt={res.image} />
                     </span>
                   </a>
                 </div>
@@ -119,7 +119,7 @@ function Lista() {
         {/* TOPO */}
         <div id="toolbar" className="smartphone:toolbar-sm">
           <div className="voltar-sm">
-            <a href="#start">home</a>
+            <a href="#home">home</a>
           </div>
           <h1>presentes</h1>
         </div>
