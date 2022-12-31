@@ -5,7 +5,9 @@
 @layer base {
   .ct-lg {
     @apply     
-    w-full    
+    w-full
+    border-[1px]
+    border-black
     h-screen         
   }
   /* MOBILE */
@@ -13,9 +15,6 @@
   .ct-sm {
     @apply    
     w-full 
-    h-screen
-    flex 
-    flex-col 
-    gap-1    
+    h-screen     
   }  
 }

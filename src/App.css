@@ -6,9 +6,8 @@
   /* DESKTOP */ 
   /* CONTAINER */
   body{
-    @apply    
-    overflow-hidden
-    scrollbar-hide  
+    @apply        
+    overflow-hidden    
   }    
   html{
     @apply

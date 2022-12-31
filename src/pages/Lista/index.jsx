@@ -13,8 +13,10 @@ function Lista() {
     "estamos dando esse passo com a benção de Deus e com as suas" +
     "orações! A sua vida já é um presente!";
   let texto2 =
-    " Deixaremos abaixo, as cores escolhidas para compor os" +
-    "ambientes em nosso lar.";
+    " Deixaremos abaixo, as cores escolhidas para compor os " +
+    "ambientes em nosso lar. "
+  let texto3 = "Ah! Caso escolha um item nos envie um print para retirarmos da lista."
+    +" Obrigado!"
 
   const [presentes, setPresentes] = useState([]);
 
@@ -70,6 +72,7 @@ function Lista() {
             <p>{texto1}</p>
             <h1>MAS, SE POR VENTURA TIVER OUTRO INTEM EM MENTE...</h1>
             <p>{texto2}</p>
+            <p>{texto3}</p>
             <div className="desktop:temas-lg">
               <div className="nome-cor-lg ">
                 <span className="nome-cor">bege</span>
@@ -90,7 +93,7 @@ function Lista() {
           {/* RODAPÉ */}
           <div id="rodape" className="desktop:rodape-lg">
             <div id="endereco">
-              <h2>Endereços para o envio dos presentes abaixo!</h2>
+              <h2>abaixo estão os endereços para o envio dos presentes</h2>
               <div className="enderecos-lg">
                 <div className="end end-1">
                   <h2>📍residência dos noivos</h2>
@@ -127,7 +130,7 @@ function Lista() {
           <div id="lista-presentes" className="smartphone:presentes-sm">
             {presentes.map((res) => {
               return (
-                <div key={res.id} className="return">
+                <div key={res.id} className="return-sm">
                   <a href={"https://" + res.link} target="_blank">
                     <img src={res.image} alt={res.image} />
                   </a>
@@ -142,6 +145,7 @@ function Lista() {
             <p>{texto1}</p>
             <h1>MAS, SE POR VENTURA TIVER OUTRO ITEM EM MENTE...</h1>
             <p>{texto2}</p>
+            <p>{texto3}</p>
             <div className="smartphone:temas-sm">
               <div className="nome-cor-sm ">
                 <span className="nome-cor">bege</span>
