@@ -82,10 +82,9 @@
   /* MOBILE */
   /* CONTENT */
   .content-sm {
-    @apply  
-    relative
+    @apply      
     w-full 
-    h-screen     
+    h-[950px]
   }
   /* TITULO */
   .title-sm {

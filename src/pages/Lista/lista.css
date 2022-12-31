@@ -216,7 +216,7 @@
   .lista-sm {
     @apply         
     w-full
-    h-screen        
+    h-screen
     overflow-scroll
     scrollbar-hide    
     text-versiculo
@@ -226,8 +226,8 @@
   .toolbar-sm {
     @apply 
     w-full
-    h-[150px]
-    bg-title
+    h-[120px]
+    bg-versiculo
     text-white          
     flex      
     flex-col
@@ -239,7 +239,7 @@
   }
   .toolbar-sm h2 {
     @apply             
-    text-2xl
+    text-xl
   }  
 
   /* CONTENT LISTA */
@@ -250,6 +250,7 @@
     p-1
     flex
     flex-col
+    gap-3
     items-center    
     font-Belleza
   }
@@ -288,16 +289,18 @@
   /* MENSAGEM */
   .msg-sm{
     @apply
-    w-[80%]
+    w-[80%]    
     flex
     flex-col
     gap-5
-    items-center  
-    mt-20      
+    items-center         
   }
   .msg-sm h1{
-    @apply    
-    text-2xl
+    @apply   
+    w-full 
+    text-xl
+    bg-title
+    text-white
     text-center
     uppercase
   }
