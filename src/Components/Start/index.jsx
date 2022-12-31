@@ -25,8 +25,8 @@ function Mobile() {
       <div id="photo" className="smartphone:photo-sm"></div>
       <div className="smartphone:nome-sm">
         <h1>Tiago e Laís</h1>
-        <Messages />
       </div>      
+      <Messages />
       <Seta link="lista" comando="Lista de presentes"/>
     </div>
   );

@@ -73,36 +73,33 @@
   }
   /* MOBILE */    
   .msgs-sm {
-    @apply         
-    w-full
-    h-screen
-    flex     
-    flex-col 
-    absolute
-    top-[100%]
+    @apply
+    border-[1px]         
+    border-black
+    w-full    
+    flex    
+    flex-col         
   }
-
   .versiculo-sm {
     @apply 
-    w-full 
-    absolute 
-    top-0
+    w-full    
   }
-
   .versiculo-sm p {
-    @apply text-xl text-center
+    @apply 
+    text-xl 
+    text-center
   }
-
   .versiculo-sm span {
-    @apply text-xl
+    @apply 
+    text-xl
   }
-
   /* AGRADECIMENTO */
   .agra-sm {
-    @apply w-full absolute top-[5%]
+    @apply 
+    w-full
   }
-
   .agra-sm p {
-    @apply text-base
+    @apply 
+    text-base
   }
 }
