@@ -6,27 +6,29 @@
   /* MENSAGENS */
   /* VERSICULO */
   .msgs-lg {
-    @apply     
+    @apply      
     w-full
-    h-screen     
+    h-full 
     flex 
     flex-col
   }
   .versiculo-lg {
     @apply    
-    h-full
     w-full
+    h-full    
     flex
     justify-center
   }
   .versiculo-lg p {
     @apply 
-    text-5xl 
-    text-center
+    w-[90%]
+    font-black
+    text-2xl    
   }
   .versiculo-lg span {
     @apply 
-    text-xl
+    text-base
+    ml-5
   }
   /* AGRADECIMENTO */
   .agra-lg {
@@ -35,13 +37,13 @@
     m-auto
     flex
     justify-center
-    w-[60%] 
+    w-[90%]
     h-full
     text-justify
   }
   .agra-lg p {
     @apply 
-    text-4xl
+    text-2xl
     text-versiculo
   }
   /* BOTAO NOS PRESENTEIE */

@@ -4,92 +4,38 @@
 
 @layer base {
   /* BOTAOZINHO ANIMADO MOBILE*/
-  .botao-sm {
-    @apply 
-    relative 
-    top-[85%] 
-    flex 
-    flex-col 
-    justify-end 
-    items-center 
-    cursor-pointer 
-    uppercase 
-    w-full 
+  .link-sm{
+    @apply
+    w-full
     h-[50px]
+    absolute
+    bottom-0    
+    flex
+    justify-center
+    items-center
+    uppercase
+    bg-title
+    text-white
+    cursor-pointer
+  }  
+  .link-lg{
+    @apply
+    w-[20%]
+    h-[50px]    
+    absolute
+    bottom-[5%]
+    rounded-[20px]
+    flex
+    justify-center
+    items-center
+    uppercase
+    bg-title
+    text-white
+    cursor-pointer
+  } 
+  .link-sm,
+  .link-lg:hover{
+    @apply
+    bg-versiculo
   }
-
-  .botao-sm .bx {
-    @apply 
-    flex 
-    items-center 
-    relative 
-    h-2 
-    text-versiculo
-  }
-
-  .botao-sm #bx1 {
-    @apply 
-    text-2xl 
-    animate-chevron
-  }
-
-  .botao-sm #bx2 {
-    @apply 
-    text-xl 
-    animate-chevron1
-  }
-
-  .botao-sm #bx3 {
-    @apply 
-    text-sm 
-    animate-chevron2
-  }
-
-    /* BOTAOZINHO ANIMADO DESKTOP */
-    .seta-lg{
-      @apply      
-      /* absolute
-      bottom-[5%] */      
-      w-full
-      h-[100px]
-      flex  
-      items-center    
-    }
-    
-    .botao-lg {
-      @apply      
-      flex flex-col 
-      justify-end       
-      items-center 
-      cursor-pointer 
-      uppercase 
-      w-full 
-      h-[50px]
-    }
-  
-    .botao-lg .bx {
-      @apply 
-      flex 
-      items-center 
-      relative 
-      h-2 
-      text-versiculo
-    }
-  
-    .botao-lg #bx1 {
-      @apply 
-      text-2xl 
-      animate-chevron
-      mt-4
-    }
-  
-    .botao-lg #bx2 {
-      @apply text-xl animate-chevron1
-    }
-  
-    .botao-lg #bx3 {
-      @apply text-sm animate-chevron2
-    }
-
-   
 }

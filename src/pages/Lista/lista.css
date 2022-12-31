@@ -197,8 +197,16 @@
   uppercase
   absolute
   top-0
-  right-[50%]
-  rotate-180
+  right-[50%]  
+}
+.voltar-lg{
+  @apply
+  text-versiculo
+  uppercase
+  absolute
+  top-[2%] 
+  right-[2%]
+  text-sm
 }
 
   /* MOBILE */

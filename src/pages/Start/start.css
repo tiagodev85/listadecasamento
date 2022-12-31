@@ -8,6 +8,7 @@
   .content-lg {
     @apply         
     w-full 
+    h-screen
     flex 
     flex-col 
     items-center
@@ -45,10 +46,18 @@
     text-7xl 
     tracking-[8px]
   }
+  /* QUADRO */
+  .quadro-lg{    
+    @apply
+    w-[80%]    
+    flex
+    flex-row    
+    items-center
+  }
   /* FOTO */
   .photo-lg {
     @apply 
-    w-[1500px] 
+    w-[1800px] 
     h-[550px] 
     bg-casal 
     bg-no-repeat 
@@ -59,56 +68,78 @@
   .nome-lg {
     @apply 
     absolute 
-    bottom-[10%] 
+    bottom-[15%]     
+    left-[20%]
     w-full 
     font-Angella
   }
   .nome-lg h1 {
-    @apply 
-    text-center 
+    @apply       
     text-title 
     text-shadow 
-    text-[10rem]
-  }
-  .seta-start-lg{
-    @apply
-    w-full
-    h-[100px]    
-    absolute
-    bottom-[5%]
+    text-[8rem]
   }
   /* MOBILE */
   /* CONTENT */
   .content-sm {
-    @apply relative top-0 w-full h-screen overflow-hidden
+    @apply  
+    relative
+    w-full 
+    h-screen 
+    overflow-hidden
   }
-
   /* TITULO */
   .title-sm {
-    @apply absolute top-[2%] flex justify-center items-center w-full text-center uppercase font-Belleza text-title
+    @apply
+    flex
+    items-center            
+    w-full 
+    h-[15%]
+    text-center 
+    uppercase 
+    font-Belleza 
+    text-title
   }
-
   .text-title-sm {
-    @apply w-full flex flex-col
+    @apply 
+    w-full 
+    flex 
+    flex-col
   }
-
   .title-sm h3 {
-    @apply text-base tracking-[5px]
+    @apply 
+    text-base 
+    tracking-[5px]
   }
-
   .title-sm h1 {
-    @apply text-4xl tracking-[5px]
+    @apply 
+    text-4xl 
+    tracking-[5px]
   }
-
   /* FOTO */
   .photo-sm {
-    @apply bg-casal bg-contain bg-center bg-no-repeat w-full h-[35%] absolute top-[12%] left-0
-    /* z-[-1] */
+    @apply 
+    bg-casal 
+    bg-contain 
+    bg-center 
+    bg-no-repeat 
+    w-full 
+    h-[35%] 
+    absolute 
+    top-[12%] 
+    left-0   
   }
-
   /* NOMES */
   .nome-sm {
-    @apply w-full h-[20%] absolute top-[38%] flex justify-center items-center font-Angella
+    @apply 
+    w-full 
+    h-[20%] 
+    absolute 
+    top-[38%] 
+    flex 
+    justify-center 
+    items-center 
+    font-Angella
   }
 
   .nome-sm h1 {
@@ -137,12 +168,5 @@
     @apply text-justify
   }
 
-  /* BOTAO NOS PRESENTEIE */
-  /* .btn-sm {
-    @apply absolute top-[100%] w-full flex justify-center items-center
-  }
-
-  .btn-sm button {
-    @apply w-[50%] h-[40%] text-white text-base font-Belleza uppercase bg-versiculo rounded-3xl hover:bg-button-hover cursor-pointer
-  } */
+  
 }

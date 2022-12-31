@@ -4,30 +4,9 @@
 
 @layer base {
   .ct-lg {
-    @apply       
-    scroll-smooth
-    scrollbar-hide
-    w-full
-    max-w-full
+    @apply     
+    w-full    
     h-screen         
-  }
-  .ct-lg .content{
-    @apply    
-    flex
-    flex-col
-    w-full
-    max-w-full    
-  }
-  .ct-lg .content section{
-    @apply
-    w-full
-    h-screen
-    /* max-h-screen
-    overflow-hidden
-    overflow-y-scroll
-    scrollbar-hide
-    flex
-    justify-center */
   }
   /* MOBILE */
   /* CONTAINER */
@@ -37,19 +16,6 @@
     h-screen
     flex 
     flex-col 
-    gap-1 
-    m-auto
-  }
-  .ct-sm .content{
-    @apply    
-    flex
-    flex-col
-    w-full
-    max-w-full    
-  }
-  .ct-sm .content section{
-    @apply
-    w-full
-    h-screen   
-  }
+    gap-1    
+  }  
 }

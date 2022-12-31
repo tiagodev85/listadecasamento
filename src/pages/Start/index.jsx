@@ -1,10 +1,11 @@
 import "./start.css";
 import Messages from "../Messages";
-import CheckDevice from "../CheckDevice/checkDevice";
-import Seta from "../Seta";
+import CheckDevice from "../../Components/CheckDevice/checkDevice";
+import Seta from "../../Components/Seta";
+import { Link } from "react-router-dom";
 
 function Start() {
-  const isMobile = CheckDevice();  
+  const isMobile = CheckDevice();
 
   if (isMobile) {
     return <Mobile />;
@@ -25,9 +26,9 @@ function Mobile() {
       <div id="photo" className="smartphone:photo-sm"></div>
       <div className="smartphone:nome-sm">
         <h1>Tiago e Laís</h1>
-      </div>      
-      <Messages />      
-      <Seta link="lista" comando="Lista de presentes"/>
+      </div>
+      <Messages />
+      <Seta link="/lista" />
     </div>
   );
 }
@@ -40,13 +41,14 @@ function Desktop() {
           <h1>casamento</h1>
         </div>
       </div>
-      <div id="photo" className="desktop:photo-lg"></div>
+      <div className="desktop:quadro-lg">
+        <div id="photo" className="desktop:photo-lg"></div>      
+        <Messages />
+      </div>
       <div className="desktop:nome-lg">
         <h1>Tiago e Laís</h1>
       </div>
-      <div className="desktop:seta-start-lg">
-        <Seta link="messages" comando="Deus o abençoe!"/>
-      </div>
+      <Seta link="/lista" />      
     </div>
   );
 }

@@ -1,27 +1,21 @@
+import { Link } from "react-router-dom";
 import CheckDevice from "../CheckDevice/checkDevice";
 import "./seta.css";
 
-function Seta({ link, id, comando }) {
+function Seta({ link }) {
   const isMobile = CheckDevice();
   console.log(isMobile);
 
   if (isMobile) {
     return (
-      <a href={"#"+link} id={"scrollDown-"+id} className="smartphone:botao-sm" data-bs-toggle="tooltip" title={comando}>  
-        <i id="bx1" className="bx bxs-chevron-down"></i>
-        <i id="bx2" className="bx bxs-chevron-down"></i>
-        <i id="bx3" className="bx bxs-chevron-down"></i>
-      </a>
+      <div className="smartphone:link-sm">
+        <Link to={link}>Acesse nossa lista de presentes</Link>
+      </div>
     );
-  }else{
+  } else {
     return (
-      <div className="desktop:seta-lg">
-        <a href={"#"+link} id={"scrollDown-"+id} className="desktop:botao-lg" data-bs-toggle="tooltip" title={comando}
-        >
-          <i id="bx1" className="bx bxs-chevron-down"></i>
-          <i id="bx2" className="bx bxs-chevron-down"></i>
-          <i id="bx3" className="bx bxs-chevron-down"></i>
-        </a>
+      <div className="desktop:link-lg">
+        <Link to={link}>Acesse nossa lista de presentes</Link>
       </div>
     );
   }

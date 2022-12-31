@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./lista.css";
 import CheckDevice from "../../Components/CheckDevice/checkDevice";
+import { Link } from "react-router-dom";
 
 function Lista() {
   const isMobile = CheckDevice();
@@ -45,22 +46,20 @@ function Lista() {
         {/* TOPO */}
         <div id="toolbar" className="desktop:toolbar-lg">
           <div className="voltar-lg">
-            <Seta comando="Ínicio" link="start" id="seta-inicio" />
+            <Link to={"/"}>Home</Link>
           </div>
-          <h1>Como deseja nos presentear?</h1>        
+          <h1>Como deseja nos presentear?</h1>
         </div>
         {/* LISTA DE PRESENTES */}
-        <div id="content" className="desktop:content-lista-lg">          
+        <div id="content" className="desktop:content-lista-lg">
           <div id="lista-presentes" className="desktop:presentes-lg">
             {presentes.map((res) => {
               return (
                 <div key={res.id} className="return">
                   <a href={"https://" + res.link} target="_blank">
-                    <span>
-                      {res.item}
-                      <img src={res.image} alt={res.image} />
-                    </span>
+                    <img src={res.image} alt={res.image} />
                   </a>
+                  <span>{res.item}</span>
                 </div>
               );
             })}
@@ -119,7 +118,7 @@ function Lista() {
         {/* TOPO */}
         <div id="toolbar" className="smartphone:toolbar-sm">
           <div className="voltar-sm">
-            <a href="#home">home</a>
+            <Link to={"/"}>Home</Link>
           </div>
           <h1>presentes</h1>
         </div>
