@@ -44,9 +44,9 @@ function Desktop() {
       <div className="desktop:quadro-lg">
         <div id="photo" className="desktop:photo-lg"></div>      
         <Messages />
-      </div>
-      <div className="desktop:nome-lg">
-        <h1>Tiago e Laís</h1>
+        <div className="desktop:nome-lg">
+          <h1>Tiago e Laís</h1>
+        </div>
       </div>
       <Seta link="/lista" />      
     </div>

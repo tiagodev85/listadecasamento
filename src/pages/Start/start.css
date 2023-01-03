@@ -7,8 +7,9 @@
   /* CONTENT */
   .content-lg {
     @apply         
-    w-full 
-    h-screen
+    w-[80%]
+    m-auto
+    h-screen    
     flex 
     flex-col 
     items-center
@@ -48,10 +49,11 @@
   }
   /* QUADRO */
   .quadro-lg{    
-    @apply
-    w-[80%]    
+    @apply    
+    w-[90%]    
     flex
     flex-row    
+    gap-2
     items-center
   }
   /* FOTO */
@@ -68,8 +70,10 @@
   .nome-lg {
     @apply 
     absolute 
-    bottom-[15%]     
-    left-[20%]
+    top-[62%]
+    left-[35%]
+    -translate-x-[50%]
+    text-center
     w-full 
     font-Angella
   }

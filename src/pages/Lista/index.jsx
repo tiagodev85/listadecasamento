@@ -48,7 +48,7 @@ function Lista() {
         {/* TOPO */}
         <div id="toolbar" className="desktop:toolbar-lg">
           <div className="voltar-lg">
-            <Link to={"/"}>Home</Link>
+            <Link to={"/"}>Voltar</Link>
           </div>
           <h1>Como deseja nos presentear?</h1>
         </div>

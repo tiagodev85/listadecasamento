@@ -6,38 +6,37 @@
   /* MENSAGENS */
   /* VERSICULO */
   .msgs-lg {
-    @apply      
+    @apply          
     w-full
     h-full 
     flex 
-    flex-col
+    flex-col    
   }
   .versiculo-lg {
     @apply    
     w-full
     h-full    
-    flex
-    justify-center
+    flex    
   }
   .versiculo-lg p {
     @apply 
-    w-[90%]
+    p-2
+    w-full
     font-black
-    text-2xl    
+    text-2xl 
   }
   .versiculo-lg span {
     @apply 
     text-base
-    ml-5
+    ml-[80%]
   }
   /* AGRADECIMENTO */
   .agra-lg {
     @apply
+    p-2
     font-Belleza    
-    m-auto
-    flex
-    justify-center
-    w-[90%]
+    flex    
+    w-full
     h-full
     text-justify
   }
