@@ -7,7 +7,7 @@
   /* VERSICULO */
   .msgs-lg {
     @apply          
-    w-full
+    w-[90%]
     h-full 
     flex 
     flex-col    
