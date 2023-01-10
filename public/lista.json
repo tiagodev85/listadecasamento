@@ -113,13 +113,7 @@
 			"item": "Mop giratório",
 			"link": "www.ferreiracosta.com/Produto/415010/mop-giratorio-com-balde-centrifuga-8l-verde-bianchini?region_id=333333",
 			"image": "./items/mopi.jpg"
-		},
-		{
-			"id": 22,
-			"item": "Sanduicheira e Grill Britânia",
-			"link": "/britania.com.br/sanduicheira-e-grill-britania-bgr15pi-revestimento-em-ceramica-66701167/p",
-			"image": "./items/sanduicheira.webp"
-		},
+		},	
 		{
 			"id": 23,
 			"item": "Lavadora de roupas",
