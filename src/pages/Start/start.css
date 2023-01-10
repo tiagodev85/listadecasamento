@@ -86,22 +86,22 @@
   /* MOBILE */
   /* CONTENT */
   .content-sm {
-    @apply      
+    @apply          
     w-full 
-    h-[950px]
+    h-screen
   }
   /* TITULO */
   .title-sm {
-    @apply
-    flex
+    @apply        
+    flex    
     items-center            
     w-full 
-    h-[15%]
+    h-[10%]
     text-center 
     uppercase 
     font-Belleza 
     text-title
-  }
+  }  
   .text-title-sm {
     @apply 
     w-full 
@@ -148,7 +148,7 @@
     @apply w-full text-center text-[6rem] text-title text-shadow
   }
 
-  /* VERSICULO */
+  /* VERSICULO */  
   .versiculo-sm {
     @apply absolute top-[55%] w-full flex font-Belleza text-justify
   }

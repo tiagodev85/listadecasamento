@@ -3,8 +3,7 @@ import CheckDevice from "../CheckDevice/checkDevice";
 import "./seta.css";
 
 function Seta({ link }) {
-  const isMobile = CheckDevice();
-  console.log(isMobile);
+  const isMobile = CheckDevice();  
 
   if (isMobile) {
     return (

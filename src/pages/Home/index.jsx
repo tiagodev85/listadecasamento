@@ -6,7 +6,7 @@ import CheckDevice from "../../Components/CheckDevice/checkDevice";
 
 function Home() {
   const isMobile = CheckDevice();
-  console.log(isMobile);
+  
   if (isMobile) {
     return (
       <div className="smartphone:ct-sm">

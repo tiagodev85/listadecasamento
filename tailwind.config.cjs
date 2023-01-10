@@ -7,10 +7,9 @@ module.exports = {
       "60": "60px",
       "20": "20px",
     },
-    screens: {
-      tablet: "640px",
-      smartphone: "360px",
-      desktop: "1024px",
+    screens: {          
+      smartphone: {'min' : '360px', 'max' : '1024px'},
+      desktop: {'min' : '1024px'},
     },
     fontFamily: {
       Belleza: ["Belleza"],
